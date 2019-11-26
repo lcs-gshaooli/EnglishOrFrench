@@ -9,12 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
+    @IBOutlet weak var inputText: UITextView!
+    
+    @IBOutlet weak var outputAnalysis: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func analyzeText(_ sender: Any) {
+        
+        
+        
+        
+        
+        
+        
+    }
+    
 
 }
 
