@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
+    
     @IBOutlet weak var inputText: UITextView!
     
     @IBOutlet weak var outputAnalysis: UILabel!
@@ -19,16 +19,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func analyzeText(_ sender: Any) {
-     
+        
         // guard if no imput is provide
         guard let input = inputText.text, input.count > 0 else {
             outputAnalysis.text = "please enter text to analyze"
             return
-        
+            
         }
-        
-     
-        
         
         //Start analyzing characters in the input
         var sCount = 0
@@ -51,8 +48,6 @@ class ViewController: UIViewController {
         }
         
         //Output the text here
-        
-        
         if tCount > sCount {
             outputAnalysis.text = "This is probably English text"
         } else {
@@ -63,4 +58,3 @@ class ViewController: UIViewController {
     
 
 }
-
