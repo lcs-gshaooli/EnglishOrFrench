@@ -44,14 +44,13 @@ class ViewController: UIViewController {
                 break
             }
             
-            
         }
         
         //Output the text here
         if tCount > sCount {
             outputAnalysis.text = "This is probably English text"
         } else {
-            outputAnalysis.text = "This is probably French text"
+            outputAnalysis.text = "This is probably French text"    
         }
         
     }
